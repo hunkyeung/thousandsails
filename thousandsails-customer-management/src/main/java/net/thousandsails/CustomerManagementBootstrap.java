@@ -25,7 +25,6 @@ public class CustomerManagementBootstrap implements ApplicationRunner {
     PickingOutRepetitiveCustomerApplication application;
 
     public static void main(String[] args) {
-        System.out.println(args.length);
         SpringApplication.run(CustomerManagementBootstrap.class, args);
     }
 

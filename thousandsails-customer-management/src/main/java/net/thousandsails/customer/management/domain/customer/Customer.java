@@ -32,7 +32,7 @@ public class Customer {
     }
 
     public void match(Customer other) {
-        if (Objects.equals(merchandiser, other.merchandiser) || isRepetitive()) {
+        if (Objects.equals(merchandiser, other.merchandiser)) {
             return;
         }
         if (Objects.equals(email, other.email) && Objects.equals(name, other.name)) {
