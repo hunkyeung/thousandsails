@@ -9,13 +9,20 @@ import lombok.NoArgsConstructor;
 public class Customer {
     @ExcelProperty("序号")
     private String seqNumber;
-    @ExcelProperty("客 户 名 称")
+    @ExcelProperty(value = "公  司  名  称", converter = KeywordConverter.class)
     private String name;
-    @ExcelProperty("邮  箱")
+    @ExcelProperty(value = "联  系  人", converter = KeywordConverter.class)
+    private String contacts;
+    @ExcelProperty(value = "E-mail", converter = KeywordConverter.class)
     private String email;
-    @ExcelProperty("跟 单 员")
+    @ExcelProperty("国家/城市")
+    private String country;
+    @ExcelProperty("地址")
+    private String address;
+    @ExcelProperty(value = "跟单业务员")
     private String merchandiser;
     @ExcelProperty("匹配逻辑")
     private String matchingLogic;
 
 }
+
